@@ -1,0 +1,123 @@
+﻿<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1280, initial-scale=1.0">
+  <title>DI.DAY - Tagesablauf</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css?v=2">
+</head>
+
+<body>
+
+  <section
+    class="relative h-[720px] w-[1280px] overflow-hidden bg-[#fffdfa] text-[#280322] flex flex-col justify-between p-16"
+    data-slide-title="Der Tagesablauf von 10:00 bis 12:00 Uhr" data-slide-type="content">
+    <!-- Header -->
+    <div class="flex items-center justify-between border-b border-[#ffd966] pb-4">
+      <div class="flex items-center gap-2">
+        <span class="w-2.5 h-2.5 rounded-full bg-[#800080]"></span>
+        <span class="text-xs font-bold uppercase tracking-wider text-[#995900]">Programm heute</span>
+      </div>
+      <span class="text-xs font-semibold text-[#800080] uppercase tracking-widest">Bücherhalle Bergedorf · 2
+        Stunden</span>
+    </div>
+    <!-- Title & Schedule Visual -->
+    <div class="my-auto space-y-8">
+      <div>
+        <h2 class="text-4xl font-extrabold text-[#280322]">
+          Unser Fahrplan für den Vormittag
+        </h2>
+        <p class="text-base text-[#4d2700] mt-1">
+          Erst kurzer Überblick und Fachimpuls, danach 90 Minuten offenes Arbeiten &amp; Helfen.
+        </p>
+      </div>
+      <!-- Timeline Grid -->
+      <div class="grid grid-cols-12 gap-6 items-stretch">
+        <!-- Part 1: Intro (30 min) -->
+        <div class="col-span-4 bg-[#f9f2ff] border-2 border-[#b88ae5] rounded-2xl p-6 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-2xl font-black text-[#800080]">10:00 – 10:30</span>
+              <span class="text-xs font-bold uppercase px-2 py-0.5 rounded bg-[#b88ae5]/30 text-[#800080]">30 Min</span>
+            </div>
+            <h3 class="text-xl font-bold text-[#280322] mb-3">Intro &amp; Fachlicher Impuls</h3>
+            <ul class="space-y-2 text-sm text-[#4d2700]">
+              <li class="flex items-center gap-2">
+                <span class="w-1.5 h-1.5 rounded-full bg-[#800080]"></span>
+                <span>Begrüßung &amp; Idee des DI.DAY</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="w-1.5 h-1.5 rounded-full bg-[#800080]"></span>
+                <span>Fachinput: Warum Browser, Suchmaschine &amp; Messenger?</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="w-1.5 h-1.5 rounded-full bg-[#800080]"></span>
+                <span>Kurze Fragerunde im Plenum</span>
+              </li>
+            </ul>
+          </div>
+          <div class="mt-6 pt-4 border-t border-[#b88ae5]/40 text-xs font-bold text-[#800080] uppercase tracking-wide">
+            Hier sind wir gerade
+          </div>
+        </div>
+        <!-- Part 2: Hands-on Werkstatt (90 min) -->
+        <div class="col-span-8 bg-[#fffbe6] border-2 border-[#ffa600] rounded-2xl p-6 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <div class="flex items-center gap-3">
+                <span class="text-2xl font-black text-[#995900]">10:30 – 12:00</span>
+                <span class="text-xs font-black uppercase px-2.5 py-0.5 rounded bg-[#ffa600] text-[#280322]">90 Min ·
+                  Praxis</span>
+              </div>
+              <span class="text-xs font-bold text-[#995900]">Gruppenraum Bücherhalle</span>
+            </div>
+            <h3 class="text-xl font-bold text-[#280322] mb-3">Hands-on: Offenes Doing &amp; Kleingruppen</h3>
+            <p class="text-sm text-[#4d2700] mb-4">
+              Keine Vorträge mehr, sondern direkte Praxis an den mitgebrachten Geräten. Neulinge und Erfahrene arbeiten
+              Tisch an Tisch.
+            </p>
+            <!-- 3 Activity Pillars -->
+            <div class="grid grid-cols-3 gap-3">
+              <div class="bg-white/80 p-3.5 rounded-xl border border-[#ffd966]">
+                <div class="font-bold text-sm text-[#280322] mb-1">Tisch A: Browser &amp; Suche</div>
+                <p class="text-xs text-[#4d2700]">Firefox/Ecosia einrichten, Standard-Suchmaschine umstellen,
+                  Tracking-Schutz aktivieren.</p>
+              </div>
+              <div class="bg-white/80 p-3.5 rounded-xl border border-[#ffd966]">
+                <div class="font-bold text-sm text-[#280322] mb-1">Tisch B: Messenger</div>
+                <p class="text-xs text-[#4d2700]">Signal installieren, Kontakte verifizieren, Chat-Backups sicher
+                  konfigurieren.</p>
+              </div>
+              <div class="bg-white/80 p-3.5 rounded-xl border border-[#ffd966]">
+                <div class="font-bold text-sm text-[#280322] mb-1">Tisch C: Fragen &amp; Hilfe</div>
+                <p class="text-xs text-[#4d2700]">Offene Fragen, Sicherheitsbedenken, Passwörter &amp; erste Schritte im
+                  eigenen Tempo.</p>
+              </div>
+            </div>
+          </div>
+          <div class="mt-6 pt-4 border-t border-[#ffd966] flex items-center justify-between text-xs text-[#995900]">
+            <span class="font-medium">Jederzeit Raum für individuelle Wechsel &amp; Tests</span>
+            <span class="font-bold uppercase tracking-wider">Ende: 12:00 Uhr</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Bottom Tip -->
+    <div
+      class="flex items-center gap-3 bg-[#f9f2ff] p-3.5 rounded-xl border border-[#b88ae5]/60 text-xs text-[#4d2700]">
+      <img alt="Tipp" class="w-4 h-4 shrink-0"
+        src="https://presenton-public-eu.s3.eu-central-1.amazonaws.com/static/icons/bold/users-bold.svg">
+      <span><strong>Tipp:</strong> Helft euch gegenseitig! Wer schon einen Schritt weiter ist, kann den Nachbarn
+        unterstützen. So lernen wir alle am schnellsten.</span>
+    </div>
+    <nav aria-label="Foliennavigation">
+      <a class="slide-nav slide-nav-prev" href="slide_0005.html" aria-label="Vorherige Folie">&#8592;</a>
+      <a class="slide-nav slide-nav-next" href="slide_0007.html" aria-label="Nächste Folie">&#8594;</a>
+    </nav>
+  </section>
+
+</body>
+
+</html>

@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  overflow: hidden;
+  font-family: 'Inter', sans-serif;
+}
+
+.icon-orange {
+  filter: invert(72%) sepia(85%) saturate(1518%) hue-rotate(359deg) brightness(102%) contrast(106%);
+}
+
+.icon-white {
+  filter: brightness(0) invert(1);
+}
+
+.slide-nav {
+  position: absolute;
+  bottom: 0.5rem;
+  z-index: 20;
+  display: inline-flex;
+  box-sizing: border-box;
+  width: 2.75rem;
+  height: 2.75rem;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 217, 102, 0.6);
+  border-radius: 9999px;
+  background: rgba(40, 3, 34, 0.85);
+  color: #ffd966;
+  font-family: inherit;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1;
+  text-decoration: none;
+  appearance: none;
+  opacity: 0.15;
+  transition: background-color 150ms ease, color 150ms ease, transform 150ms ease;
+}
+
+.slide-nav:hover,
+.slide-nav:focus-visible {
+  background: #ffa600;
+  color: #280322;
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+.slide-nav-prev {
+  left: 0.5rem;
+}
+
+.slide-nav-next {
+  right: 0.5rem;
+}
+
+.slide-nav[aria-disabled="true"] {
+  cursor: default;
+  opacity: 0.08;
+  pointer-events: none;
+}
