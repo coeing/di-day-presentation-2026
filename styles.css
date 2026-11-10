@@ -67,3 +67,15 @@ body {
   opacity: 0.08;
   pointer-events: none;
 }
+
+@media print {
+  .slide-nav {
+    display: none;
+  }
+
+  body,
+  section {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+}

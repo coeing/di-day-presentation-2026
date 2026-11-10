@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DI.DAY Bergedorf – PDF-Druckansicht</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      display: block;
+      min-height: 100vh;
+      overflow: auto;
+      background: #e8e8e8;
+      color: #222;
+      font-family: Arial, sans-serif;
+    }
+
+    .print-toolbar {
+      position: sticky;
+      top: 0;
+      z-index: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      padding: 1rem;
+      background: #fff;
+      box-shadow: 0 2px 8px #0002;
+    }
+
+    .print-toolbar button {
+      border: 0;
+      border-radius: 0.5rem;
+      padding: 0.75rem 1rem;
+      background: #280322;
+      color: #fff;
+      cursor: pointer;
+      font: inherit;
+      font-weight: 700;
+    }
+
+    .slide-page {
+      width: 1280px;
+      height: 720px;
+      margin: 1rem auto;
+      overflow: hidden;
+      background: #280322;
+      box-shadow: 0 2px 12px #0003;
+    }
+
+    .slide-page iframe {
+      display: block;
+      width: 1280px;
+      height: 720px;
+      border: 0;
+    }
+
+    @page {
+      size: 1280px 720px;
+      margin: 0;
+    }
+
+    @media print {
+      html,
+      body {
+        width: 1280px;
+        margin: 0;
+        padding: 0;
+        overflow: visible;
+      }
+
+      body {
+        min-height: 0;
+        background: #fff;
+      }
+
+      .print-toolbar {
+        display: none;
+      }
+
+      .slide-page {
+        width: 1280px;
+        height: 720px;
+        margin: 0;
+        box-shadow: none;
+        break-after: page;
+        page-break-after: always;
+      }
+
+      .slide-page:last-child {
+        break-after: auto;
+        page-break-after: auto;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="print-toolbar">
+    <span>Alle 9 Folien sind bereit. Über den Button als PDF speichern oder drucken.</span>
+    <button type="button" onclick="window.print()">Drucken / PDF speichern</button>
+  </header>
+
+  <main aria-label="Alle Präsentationsfolien">
+    <div class="slide-page"><iframe src="slide_0001.html" title="Folie 1"></iframe></div>
+    <div class="slide-page"><iframe src="slide_0002.html" title="Folie 2"></iframe></div>
+    <div class="slide-page"><iframe src="slide_0003.html" title="Folie 3"></iframe></div>
+    <div class="slide-page"><iframe src="slide_0004.html" title="Folie 4"></iframe></div>
+    <div class="slide-page"><iframe src="slide_0005.html" title="Folie 5"></iframe></div>
+    <div class="slide-page"><iframe src="slide_0006.html" title="Folie 6"></iframe></div>
+    <div class="slide-page"><iframe src="slide_0007.html" title="Folie 7"></iframe></div>
+    <div class="slide-page"><iframe src="slide_0008.html" title="Folie 8"></iframe></div>
+    <div class="slide-page"><iframe src="slide_0009.html" title="Folie 9"></iframe></div>
+  </main>
+</body>
+
+</html>
