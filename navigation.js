@@ -15,3 +15,7 @@ document.addEventListener('keydown', (event) => {
     window.location.href = target.href;
   }
 });
+
+if (window.self !== window.top) {
+  document.querySelectorAll('.slide-nav').forEach((element) => element.remove());
+}
